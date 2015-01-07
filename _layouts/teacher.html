@@ -9,45 +9,25 @@
 	{% include header.html %}
 
 	<div class="row">
+
 		<div class="col-md-3 sidebar">
 			<ul>
-				<li>Elementary School
-					<ul>
-						<li><a href="kindergarten-pattern.html">Pattern, Kindergarten</a></li>
-						<li><a href="grade-1-monster.html">Monster in Closet, Grade 1</a></li>
-						<li><a href="grade-2-flipbook.html">Flip Books, Grade 2</a></li>
-						<li><a href="grade-4-expressive.html">Expressive Paradise, Grade 4</a></li>
-						<li><a href="grade-5-tiles.html">Personal Tiles, Grade 5</a></li>
-					</ul>
-				</li>
-				<li>Middle School
-					<ul>
-						<li><a href="grade-6-jabber.html">Jabberwocky, Grade 6</a></li>
-					</ul>
-				</li>
-				<li>High School
-					<ul>
-						<li><a href="fund-selfport.html">Self-Portraits, Fundamentals</a></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</li>
-				<li>Summer Camp
-					<ul>
-						<li><a href="YPS-Neighborhood.html">"Art Inspired By My Neighborhood" Grades 1-3</a></li>
-						<li><a href="YPS-BuildIt.html">"Build It! Constructing Artistic Sculptures" Grades 1-3</a></li>
-						<li><a href="YPS-Lines.html">"Lines, Dots, and Dashes" Grades 1-3</a></li>
-						<li><a href="YPS-Drawing-Stories.html">"Drawing, Stories, Pictures, and Words" Grades 3-5</a></li>
-						<li><a href="YPS-Fashion.html">"Introduction to Fashion Design" Grades 6-8</a></li>
-						<li><a href="YPS-Computer.html">"Computer Graphics" High School</a><li>			
-					</ul>
-				</li>
-				<li>After School
-					<ul>
-						<li><a href="Childfirst.html">Child First Art Core</a></li>
-					</ul>
-				</li>
+				{% for grade in site.data.lessons %}
+					<li>
+						<a data-toggle="collapse" href="#{{ grade.grade | truncatewords: 1, '' }}">
+							<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> {{ grade.grade }}
+						</a>
+
+						<ul id="{{ grade.grade | truncatewords: 1, '' }}" class="collapse">
+						{% for lesson in grade.lessons %}
+							<li><a href="/teacher/{{lesson.link}}">{{ lesson.title }}</a></li>
+						{% endfor %}
+						</ul>
+					</li>
+				{% endfor %}
+			</ul>
 		</div>
+
 		<div class="col-md-9">
 			{{ content }}
 		</div>

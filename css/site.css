@@ -26,3 +26,16 @@ body > div.container {
 h4, h5, h6 {
 	font-weight: bold;
 }
+
+.sidebar ul li a{
+	color: #000;
+}
+
+.sidebar ul ul li {
+	list-style-type: disc;
+	margin-left:15px;
+}
+
+.sidebar ul ul li a{
+	color: #337AB7;
+}

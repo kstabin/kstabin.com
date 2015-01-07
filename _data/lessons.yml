@@ -1,0 +1,58 @@
+--- 
+- 
+  grade: "Elementary School"
+  lessons: 
+    - 
+      link: 'kindergarten-pattern.html'
+      title: 'Pattern, Kindergarten'
+    - 
+      link: 'grade-1-monster.html'
+      title: 'Monster in Closet, Grade 1'
+    - 
+      link: 'grade-2-flipbook.html'
+      title: "Flip Books, Grade 2"
+    - 
+      link: 'grade-4-expressive.html'
+      title: "Expressive Paradise, Grade 4"
+    - 
+      link: 'grade-5-tiles.html'
+      title: "Personal Tiles, Grade 5"
+- 
+  grade: "Middle School"
+  lessons: 
+    - 
+      link: 'grade-6-jabber.html'
+      title: "Jabberwocky, Grade 6"
+- 
+  grade: "High School"
+  lessons: 
+    - 
+      link: fund-selfport.html
+      title: "Self-Portraits, Fundamentals"
+- 
+  grade: "Summer Camp"
+  lessons: 
+    - 
+      link: YPS-Neighborhood.html
+      title: "\"Art Inspired By My Neighborhood\" Grades 1-3"
+    - 
+      link: YPS-BuildIt.html
+      title: "\"Build It! Constructing Artistic Sculptures\" Grades 1-3"
+    - 
+      link: YPS-Lines.html
+      title: "\"Lines, Dots, and Dashes\" Grades 1-3"
+    - 
+      link: YPS-Drawing-Stories.html
+      title: "\"Drawing, Stories, Pictures, and Words\" Grades 3-5"
+    - 
+      link: YPS-Fashion.html
+      title: "\"Introduction to Fashion Design\" Grades 6-8"
+    - 
+      link: YPS-Computer.html
+      title: "\"Computer Graphics\" High School"
+- 
+  grade: "After Care"
+  lessons: 
+    - 
+      link: 'Childfirst.html'
+      title: 'Child First Art Core' 
